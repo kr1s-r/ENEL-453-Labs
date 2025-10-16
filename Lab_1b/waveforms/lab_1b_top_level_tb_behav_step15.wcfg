@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab_1b_top_level_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab_1b_top_level_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="52.500162001 ms"></ZoomEndTime>
+      <Cursor1Time time="52.500162000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <ValueColumnWidth column_width="198"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject fp_name="/lab_1b_top_level_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/switches_inputs" type="array">
+      <obj_property name="ElementShortName">switches_inputs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">switches_inputs[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/CA" type="logic">
+      <obj_property name="ElementShortName">CA</obj_property>
+      <obj_property name="ObjectShortName">CA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/CB" type="logic">
+      <obj_property name="ElementShortName">CB</obj_property>
+      <obj_property name="ObjectShortName">CB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/CC" type="logic">
+      <obj_property name="ElementShortName">CC</obj_property>
+      <obj_property name="ObjectShortName">CC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/CD" type="logic">
+      <obj_property name="ElementShortName">CD</obj_property>
+      <obj_property name="ObjectShortName">CD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/CE" type="logic">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/CF" type="logic">
+      <obj_property name="ElementShortName">CF</obj_property>
+      <obj_property name="ObjectShortName">CF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/CG" type="logic">
+      <obj_property name="ElementShortName">CG</obj_property>
+      <obj_property name="ObjectShortName">CG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/DP" type="logic">
+      <obj_property name="ElementShortName">DP</obj_property>
+      <obj_property name="ObjectShortName">DP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/AN1" type="logic">
+      <obj_property name="ElementShortName">AN1</obj_property>
+      <obj_property name="ObjectShortName">AN1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/AN2" type="logic">
+      <obj_property name="ElementShortName">AN2</obj_property>
+      <obj_property name="ObjectShortName">AN2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/AN3" type="logic">
+      <obj_property name="ElementShortName">AN3</obj_property>
+      <obj_property name="ObjectShortName">AN3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/AN4" type="logic">
+      <obj_property name="ElementShortName">AN4</obj_property>
+      <obj_property name="ObjectShortName">AN4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/led" type="array">
+      <obj_property name="ElementShortName">led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/sec_dig1" type="array">
+      <obj_property name="ElementShortName">sec_dig1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_dig1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/sec_dig2" type="array">
+      <obj_property name="ElementShortName">sec_dig2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_dig2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/min_dig1" type="array">
+      <obj_property name="ElementShortName">min_dig1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_dig1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/min_dig2" type="array">
+      <obj_property name="ElementShortName">min_dig2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_dig2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/selector" type="array">
+      <obj_property name="ElementShortName">selector[3:0]</obj_property>
+      <obj_property name="ObjectShortName">selector[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/decimal_point" type="array">
+      <obj_property name="ElementShortName">decimal_point[3:0]</obj_property>
+      <obj_property name="ObjectShortName">decimal_point[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/time_digit" type="array">
+      <obj_property name="ElementShortName">time_digit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">time_digit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_MUX/dp_in" type="logic">
+      <obj_property name="ElementShortName">dp_in</obj_property>
+      <obj_property name="ObjectShortName">dp_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_SELECTOR/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_SELECTOR/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_SELECTOR/digit_select" type="array">
+      <obj_property name="ElementShortName">digit_select[3:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_select[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_SELECTOR/an_outputs" type="array">
+      <obj_property name="ElementShortName">an_outputs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an_outputs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_SELECTOR/d" type="array">
+      <obj_property name="ElementShortName">d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_SELECTOR/q" type="array">
+      <obj_property name="ElementShortName">q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/DIGIT_SELECTOR/count" type="array">
+      <obj_property name="ElementShortName">count[16:0]</obj_property>
+      <obj_property name="ObjectShortName">count[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/CA" type="logic">
+      <obj_property name="ElementShortName">CA</obj_property>
+      <obj_property name="ObjectShortName">CA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/CB" type="logic">
+      <obj_property name="ElementShortName">CB</obj_property>
+      <obj_property name="ObjectShortName">CB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/CC" type="logic">
+      <obj_property name="ElementShortName">CC</obj_property>
+      <obj_property name="ObjectShortName">CC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/CD" type="logic">
+      <obj_property name="ElementShortName">CD</obj_property>
+      <obj_property name="ObjectShortName">CD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/CE" type="logic">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/CF" type="logic">
+      <obj_property name="ElementShortName">CF</obj_property>
+      <obj_property name="ObjectShortName">CF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/CG" type="logic">
+      <obj_property name="ElementShortName">CG</obj_property>
+      <obj_property name="ObjectShortName">CG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/DP" type="logic">
+      <obj_property name="ElementShortName">DP</obj_property>
+      <obj_property name="ObjectShortName">DP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/dp_in" type="logic">
+      <obj_property name="ElementShortName">dp_in</obj_property>
+      <obj_property name="ObjectShortName">dp_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/data" type="array">
+      <obj_property name="ElementShortName">data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_1b_top_level_tb/uut/SEVEN_SEGMENT_DISPLAY/SEG_DECODER/decoded_bits" type="array">
+      <obj_property name="ElementShortName">decoded_bits[6:0]</obj_property>
+      <obj_property name="ObjectShortName">decoded_bits[6:0]</obj_property>
+   </wvobject>
+</wave_config>
