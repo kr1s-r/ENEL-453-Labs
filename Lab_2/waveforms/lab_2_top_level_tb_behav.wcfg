@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab_2_top_level_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab_2_top_level_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="94.502112001 ms"></ZoomEndTime>
+      <Cursor1Time time="94.502112000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="242"></NameColumnWidth>
+      <ValueColumnWidth column_width="234"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/lab_2_top_level_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/mux_select" type="logic">
+      <obj_property name="ElementShortName">mux_select</obj_property>
+      <obj_property name="ObjectShortName">mux_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/switches_inputs" type="array">
+      <obj_property name="ElementShortName">switches_inputs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">switches_inputs[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CA" type="logic">
+      <obj_property name="ElementShortName">CA</obj_property>
+      <obj_property name="ObjectShortName">CA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CB" type="logic">
+      <obj_property name="ElementShortName">CB</obj_property>
+      <obj_property name="ObjectShortName">CB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CC" type="logic">
+      <obj_property name="ElementShortName">CC</obj_property>
+      <obj_property name="ObjectShortName">CC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CD" type="logic">
+      <obj_property name="ElementShortName">CD</obj_property>
+      <obj_property name="ObjectShortName">CD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CE" type="logic">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CF" type="logic">
+      <obj_property name="ElementShortName">CF</obj_property>
+      <obj_property name="ObjectShortName">CF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CG" type="logic">
+      <obj_property name="ElementShortName">CG</obj_property>
+      <obj_property name="ObjectShortName">CG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/DP" type="logic">
+      <obj_property name="ElementShortName">DP</obj_property>
+      <obj_property name="ObjectShortName">DP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/AN1" type="logic">
+      <obj_property name="ElementShortName">AN1</obj_property>
+      <obj_property name="ObjectShortName">AN1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/AN2" type="logic">
+      <obj_property name="ElementShortName">AN2</obj_property>
+      <obj_property name="ObjectShortName">AN2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/AN3" type="logic">
+      <obj_property name="ElementShortName">AN3</obj_property>
+      <obj_property name="ObjectShortName">AN3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/AN4" type="logic">
+      <obj_property name="ElementShortName">AN4</obj_property>
+      <obj_property name="ObjectShortName">AN4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/led" type="array">
+      <obj_property name="ElementShortName">led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/uut/bcd_value" type="array">
+      <obj_property name="ElementShortName">bcd_value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bcd_value[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/uut/mux_out" type="array">
+      <obj_property name="ElementShortName">mux_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab_2_top_level_tb/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+</wave_config>
