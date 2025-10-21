@@ -2,7 +2,7 @@
 
 // Testbench for the 2:1 mux
 // CLK generation is not needed since this is purely combinational logic
-module mux2_tb();
+module mux4_tb();
 
     // Parameters
     parameter DELAY = 10; // 10ns for 100MHz clock
@@ -12,7 +12,7 @@ module mux2_tb();
     logic s;
     logic [15:0] y;
     
-    mux2 uut(
+    mux4 uut(
         .a(a),
         .b(b),
         .s(s),

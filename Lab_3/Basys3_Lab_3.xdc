@@ -68,9 +68,9 @@ set_property -dict { PACKAGE_PIN W4   IOSTANDARD LVCMOS33 } [get_ports {AN4}]
 ##Buttons
 # Basys3 pushbuttons are normally 0 when not pushing down and 1 when pushing down
 set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports reset]; # center button is reset (before it was btnC)
-set_property -dict { PACKAGE_PIN T18   IOSTANDARD LVCMOS33 } [get_ports mux_select]; # top button is used to switch between hex and decimal for seven-seg-decoder (before it was btnU)
-#set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports btnL]
-#set_property -dict { PACKAGE_PIN T17   IOSTANDARD LVCMOS33 } [get_ports btnR]
+set_property -dict { PACKAGE_PIN T18   IOSTANDARD LVCMOS33 } [get_ports mux_select[0]]; # top button is used to switch between hex and decimal for seven-seg-decoder (before it was btnU)
+set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports reg_enable]; # left button is used as a register (before it was btnL)
+set_property -dict { PACKAGE_PIN T17   IOSTANDARD LVCMOS33 } [get_ports mux_select[1]]; # right button used to switch between stored value of hex and decimal for seven-seg-decoder (before it was btnR)
 #set_property -dict { PACKAGE_PIN U17   IOSTANDARD LVCMOS33 } [get_ports btnD]
 
 
