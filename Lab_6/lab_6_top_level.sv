@@ -13,7 +13,7 @@ module lab_6_top_level (
     input  logic   clk,
     input  logic   reset,
     input  logic [1:0] bin_bcd_select,
-    input  logic [1:0] mode_select,
+    input  logic [2:0] mode_select,
    // input  logic [15:0] switches_inputs,
     input          vauxp15, // Analog input (positive) - connect to JXAC4:N2 PMOD pin  (XADC4)
     input          vauxn15, // Analog input (negative) - connect to JXAC10:N1 PMOD pin (XADC4)
@@ -40,9 +40,9 @@ module lab_6_top_level (
     logic        busy_out;              // XADC busy signal
     logic        ready_pulse;
     logic [15:0] bcd_value, mux_out;
-    logic pwm_enable, r2r_enable, buzzer_enable;
-    logic pwm_out_internal, buzzer_out_internal;
-    logic [7:0] R2R_out_internal;
+    logic triangle_enable, sawtooth_enable, r2r_enable, buzzer_enable;
+    logic triangle_out_internal, sawtooth_out_internal, buzzer_out_internal;
+    logic [7:0] R2R_triangle_out, R2R_sawtooth_out; // R2R outputs
     
     // Constants
     localparam CHANNEL_ADDR = 7'h1f;     // XA4/AD15 (for XADC4)
@@ -73,7 +73,8 @@ module lab_6_top_level (
         .clk(clk),
         .reset(reset),
         .mode_select(mode_select),
-        .pwm_enable(pwm_enable),
+        .triangle_enable(triangle_enable),
+        .sawtooth_enable(sawtooth_enable),
         .r2r_enable(r2r_enable),
         .buzzer_enable(buzzer_enable)
     );
@@ -89,7 +90,10 @@ module lab_6_top_level (
     );
     
     // Connect ADC data to LEDs, make LEDs' brightness pulse with pwm_out
-    assign led = pwm_out_internal ? scaled_adc_data : '0;
+    logic pwm_out_combined;
+    assign pwm_out_combined = triangle_out_internal | sawtooth_out_internal;
+    
+    assign led = pwm_out_combined ? scaled_adc_data : '0;
 
     bin_to_bcd BIN2BCD (
         .clk(    clk),
@@ -124,7 +128,10 @@ module lab_6_top_level (
     );
     
     logic triangle_en;
-    assign triangle_en = pwm_enable | r2r_enable;
+    logic sawtooth_en;
+    assign triangle_en = triangle_enable | r2r_enable;
+    assign sawtooth_en = sawtooth_enable | r2r_enable;
+    
     // Instantiate the triangle_generator module
     triangle_generator #(
         .WIDTH(8),           // Bit width for duty_cycle (e.g. 8)
@@ -134,9 +141,22 @@ module lab_6_top_level (
         .clk(clk),           // Connect to system clock
         .reset(reset),       // Connect to system reset
         .enable(triangle_en), // Connect to enable signal
-        .pwm_out(pwm_out_internal), // Connect to PWM output signal
-        .R2R_out(R2R_out_internal)  // Connect to R2R ladder header, can leave empty if 
+        .pwm_out(triangle_out_internal), // Connect to PWM output signal
+        .R2R_out(R2R_triangle_out)  // Connect to R2R ladder header, can leave empty if 
     );                              // not required, i.e. .R2R_out()
+    
+    // Instantiate sawtooth_waveform module (using new 'sawtooth_en')
+    sawtooth_waveform #(
+        .WIDTH(8),
+        .CLOCK_FREQ(100_000_000),
+        .WAVE_FREQ(1.0)
+    ) saw_wave (
+        .clk(clk),
+        .reset(reset),
+        .enable(sawtooth_en), // Connected to new enable logic output
+        .pwm_out(sawtooth_out_internal),
+        .R2R_out(R2R_sawtooth_out)
+    );
 
     buzzer_pwm #(
         .CLOCK_FREQ(100_000_000), // System clock frequency in Hz
@@ -149,9 +169,14 @@ module lab_6_top_level (
     );
 
     // Output multiplexing based on FSM state
+    logic pwm_enable;
+    assign pwm_enable = triangle_enable | sawtooth_enable;
+    logic[7:0] R2R_out_combined;                                       
+    assign R2R_out_combined = R2R_triangle_out | R2R_sawtooth_out;
+    
     always_comb begin
-        pwm_out = pwm_enable ? pwm_out_internal : 0;
-        R2R_out = r2r_enable ? R2R_out_internal : '0;
+        pwm_out = pwm_enable ? pwm_out_combined : 0;
+        R2R_out = r2r_enable ? R2R_out_combined : '0;
         buzzer_out = buzzer_enable ? buzzer_out_internal : 0;
     end
     
